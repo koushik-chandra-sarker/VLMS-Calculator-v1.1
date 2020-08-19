@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="789.0" prefWidth="1164.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VLSM.OtherSubnetViewFXMLController">
+   <children>
+      <GridPane layoutX="269.0" layoutY="273.0" prefHeight="789.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="384.0" minHeight="10.0" prefHeight="117.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="698.0" minHeight="10.0" prefHeight="672.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <TableView fx:id="mytable" prefHeight="644.0" prefWidth="1160.0" stylesheets="@Style.css" GridPane.rowIndex="1">
+                 <columns>
+                  <TableColumn fx:id="SubnetNumber" prefWidth="142.0" text="Subnet Number" />
+                     <TableColumn fx:id="allocatedSize" prefWidth="142.0" text="Allocated Size" />
+                     <TableColumn fx:id="address" prefWidth="219.0" text="Address" />
+                     <TableColumn fx:id="mask" prefWidth="99.0" text="Mask" />
+                     <TableColumn fx:id="assignableRange" prefWidth="350.0" text="Assignable Range" />
+                  <TableColumn fx:id="broadcast" prefWidth="217.0" text="Broadcast" />
+                 </columns>
+             </TableView>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00539CFF;">
+               <children>
+                  <Label layoutX="419.0" layoutY="21.0" text="Other Subnets" textFill="#ffd662">
+                     <font>
+                        <Font size="52.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="1092.0" layoutY="11.0" prefHeight="27.0" prefWidth="70.0" spacing="12.0">
+                     <children>
+                        <MaterialDesignIconView fx:id="minimize" fill="#35e441" glyphName="BRIGHTNESS_1" onMouseClicked="#MouseClicked" size="24" wrappingWidth="24.0" />
+                        <MaterialDesignIconView fx:id="Close" fill="#f6505b" glyphName="BRIGHTNESS_1" onMouseClicked="#MouseClicked" size="24" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

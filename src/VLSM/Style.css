@@ -1,0 +1,31 @@
+.button {
+    -fx-background-color: #28334AFF;
+}
+
+.button:hover {
+    -fx-background-color: #0b094a;
+}
+
+#SeeSubnetButton{
+    -fx-background-color: #F65058FF;
+}
+#SeeSubnetButton:hover{
+    -fx-background-color: #fe3775;
+}
+
+#resetButton{
+    -fx-background-color: #F65058FF;
+}
+#resetButton:hover{
+    -fx-background-color: #fe3775;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler{
+    -fx-background-color: #FBDE44ff;
+
+}
+.table-view .column-header .label{
+    -fx-background-color:  #FBDE44ff;
+    -fx-text-fill: white;
+}
